@@ -105,7 +105,7 @@ class Comment(db.Model):
     post_id = db.Column(db.Integer, db.ForeignKey("blog_posts.id"))
     parent_post = relationship("BlogPost", back_populates="comments")
 
-
+# uncomment db.create_all() if need change the database
 db.create_all()
 # user = User(
 #     email="test@email.com",
