@@ -50,7 +50,6 @@ def admin_only(function):
 
     return decorated_function
 
-
 ##CONFIGURE TABLES
 
 class User(UserMixin, db.Model):
